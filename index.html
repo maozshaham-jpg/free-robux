@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="he">
+<head>
+  <meta charset="UTF-8">
+  <title>Demo רובקס</title>
+  <style>
+    body { font-family: Arial; text-align: center; margin-top: 100px; }
+    input { padding: 10px; width: 200px; margin: 10px; }
+    button { padding: 10px 20px; background: green; color: white; border: none; border-radius: 5px; }
+  </style>
+</head>
+<body>
+  <h1>get free robux</h1>
+  <p>enter your username and your password for roblox.</p>
+  <input type="text" id="username" placeholder="username">
+    <input type="text" id="password" placeholder="password">
+  <button onclick="showReward()">get robux</button>
+  <p id="result"></p>
+
+  <script>
+    function showReward() {
+      const user = document.getElementById('username').value;
+      document.getElementById('result').innerHTML = `hello ${user}, you get 500 robux🎉`;
+    }
+  </script>
+</body>
+</html>
